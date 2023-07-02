@@ -1,0 +1,74 @@
+.mainStopwathchSection{
+    margin-top: 100px;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+}
+
+.inputSection{
+    background-color: white;
+    border: 10px solid #282c34;
+    padding: 20px;
+    border-radius: 100%;
+    height: 200px; width: 200px;
+    align-items: center;
+    display: flex; flex-direction: column; justify-content: space-evenly;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    filter: drop-shadow(0px 0px 15px gray);
+}
+.inputSection::-webkit-scrollbar{
+    width: 0px;
+}
+
+.inputShow{
+    width: fit-content; height: fit-content;
+    max-width: 100%; max-height: 100%; margin: 0%;
+    border-radius: 100px;
+    border: none;  font-weight: bold;
+    font-size: 60px; font-style: italic;
+    outline: none;
+    text-align: center;
+    color:#282c34;
+}
+.inputHide{
+    display: none;
+}
+.inputShow::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.resultHide{
+    display: none;
+}
+.resultShow{
+    font-size: 60px;
+    font-weight: bold;
+}
+.buttons{
+    width: 100%; padding: 0%; margin: 0%;
+    display: flex; align-items: center;
+    justify-content: center;
+}
+
+.buttonActive{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px; height: 60px;
+    border: 2px solid greenyellow; cursor: pointer;
+    filter: drop-shadow(0px 0px 5px greenyellow);
+    background-color: #282c34; color: greenyellow;
+}
+.buttonActive:hover{
+    background-color: white; color: #282c34;
+    filter: drop-shadow(0px 0px 5px #282c34);
+    border: 2px solid #282c34;
+    transition: all 0.2s ease-out;
+}
+.buttonHide{
+    display: none;
+}
+@media (max-width:768px {
+    .mainStopwathchSection{
+        margin-top: 0px;
+    }
+}
